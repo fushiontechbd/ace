@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #444444;
+
+  /* Brand palette: signature red + neutral white/charcoal */
+  --brand: #c4161c;
+  --brand-dark: #9a1116;
+  --brand-soft: #fdecec;
+  --accent: #444444;
+  --accent-soft: #f4f4f4;
+  --muted: #444444;
+  --border: #e5e5e5;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-soft: var(--brand-soft);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+
+  --font-sans: var(--font-ador-noirrit);
+  --font-mono: var(--font-ador-noirrit);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-ador-noirrit), "Hind Siliguri", "Noto Sans Bengali",
+    "SolaimanLipi", Arial, Helvetica, sans-serif;
+  /* Prevent the browser from faking weights we haven't shipped (e.g. 800/900). */
+  font-synthesis-weight: none;
+}
+
+/* Subtle utility classes used across the page */
+.container-page {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.btn-primary:hover {
+  background: var(--brand-dark);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--brand-dark);
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  background: #fff;
+  transition: background 0.2s ease;
+}
+.btn-ghost:hover {
+  background: var(--brand-soft);
+}
