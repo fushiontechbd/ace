@@ -31,7 +31,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-3">
-            <a href="/ace_money_v2.apk" download className="btn-primary">
+            <a href="/ace_transfer_v5.apk" download className="btn-primary">
               {t.hero.downloadCta}
             </a>
             <a href="#how" className="btn-ghost">

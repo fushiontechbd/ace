@@ -95,7 +95,7 @@ export default function HowItWorks() {
             <p className="mt-1 text-slate-600">{h.ctaDescription}</p>
           </div>
           <a
-            href="/ace_money_v2.apk"
+            href="/ace_transfer_v5.apk"
             download
             className="btn-primary inline-flex flex-shrink-0"
           >

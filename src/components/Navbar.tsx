@@ -68,7 +68,7 @@ export default function Navbar() {
           </div>
 
           <a
-            href="/ace_money_v2.apk"
+            href="/ace_transfer_v5.apk"
             download
             className="btn-primary hidden md:inline-flex"
           >
@@ -165,7 +165,7 @@ export default function Navbar() {
               </div>
 
               <a
-                href="/ace_money_v2.apk"
+                href="/ace_transfer_v5.apk"
                 download
                 className="btn-primary mt-3"
                 onClick={close}
